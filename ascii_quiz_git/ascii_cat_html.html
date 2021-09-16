@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ascii Quiz!</title>
+    <style>
+      ol{
+        list-style-type: none;
+      }
+      li{
+        font-family: monospace;
+        white-space: pre;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body><!--
+    <button onclick="defaultCat()">defaultCat()</button>
+    <button onclick="catWink()">catWink()</button>
+    <button onclick="catBored()">catBored()</button>
+    <button onclick="catWin()">catWin()</button>
+    <button onclick="catTap()">catTap()</button>
+    <button onclick="catByeWave()">catByeWave()</button>-->
+    <ol onclick="catTap()">
+      <li id="cat1">                  </li>
+      <li id="cat2">                  </li>
+      <li id="cat3">      |\ - /|     </li>
+      <li id="cat4">      | · · |     </li>
+      <li id="cat5">       (='=)      </li>
+      <li id="cat6">      /|   |\     </li>
+      <li id="cat7">     / /   \ \    </li>
+      <li id="cat8">      (") (")     </li>
+      <li id="cat9">                  </li>
+      <li id="cat0">                  </li>
+    </ol>
+
+    <div id="test"></div>
+    <div id="radio_home"></div>
+    <div id="feedback"></div>
+    <br>
+    <button onclick="catByeWave();closeWindow()">End Quiz</button>
+    <script src="ascii_quiz_js.js"></script>
+    <script src="ascii_cat_js.js"></script>
+  </body>
+</html>

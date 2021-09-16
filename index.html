@@ -1,0 +1,590 @@
+
+
+
+        
+ <!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf8">
+<html>
+<head>
+    <style>
+div{
+    overflow: auto;
+}
+.book_color{
+    overflow: auto;
+    padding: 5px;
+}
+.img {
+  filter: none;
+  max-width: 90%;
+  max-height: auto;
+  opacity: 0.75;
+  
+}
+#pix{
+  object-fit: contain;
+  /*max-width: 75%;*/
+  max-height: auto;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#icon{
+    /*object-fit: contain;*/
+    border-radius: 50%;
+}
+    
+   body {
+   margin: 0px;
+   background-color:dimgray;
+   color: black;
+   padding: 0px;
+   font-family: 'Garamond';
+   }
+
+.item {
+   border: 10px solid dimgrey;
+   border-radius: 3px;
+   font-size: medium;
+   font-weight: bold;   }
+
+.box_1_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    /*border: 5px double black;*/
+}
+.box_1_1_1{
+    display: flex;
+    flex-direction: column-reverse;
+    /*border: 5px double black;*/
+    border: 10px solid #22090c;
+    border-right: 10px solid #aaa392;/**/
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    /*align-items: center;*/
+   /*font-variant: small-caps;*/
+}
+.box_1_1_2{
+    display: flex;
+    flex-direction: column-reverse;
+    /*border: 5px double black;*/
+    border: 10px solid #22090c;
+    border-left: 10px solid #aaa392;/**/
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+   /*font-variant: small-caps;*/
+}
+.box_2_1_2{
+    background-color: #000000;
+    color:white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family:"Yu Gothic";
+  font-size:20px;
+    font-variant-east-asian: traditional;
+    width:30px;
+    overflow-x: hidden;/*
+    font-family: "微軟正黑體", "Microsoft JhengHei",  Tahoma , Verdana , Arial , sans-serif;
+    font-family: Georgia, "Times New Roman", "FangSong",  STFangSong, serif;
+    text-transform: full-width;*/
+}
+.box_1_2{
+    background-color: #778899;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box_2_1_1_1{
+    background-color: #91a691;
+}
+.box_2_2{
+    color: #000000;
+    background-color: dimgray;
+}
+#box_2_1{
+    display: flex;
+    flex-direction: row;
+}
+#box_2_1_1{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+iframe{
+    background-color: #696969;
+}
+#box_2_1_1_2_1 {
+    width: 250px;
+    height: 125px;
+    position: relative;/*
+    top: 500px;
+    left: 500px;*/
+    background: #696969;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #sky_pic {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: -125px;
+    left: 0px;
+    right:0px;
+    background: #000000;
+  }
+  #box_2_1_1_2_2{
+      background-color: #451219;
+      width: 250px;
+      height: 75px;
+      color: #ffffff;
+  }
+  #box2{
+      display: flex;
+      flex-direction: column-reverse;
+  }/*
+  #book_head{
+      text-align: center;
+  }*/
+  #book_pic{
+      border-radius: 15px;
+      justify-content: center;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%;
+  }
+
+#right_num{
+    text-align: right;
+    margin-right: 10%;
+    margin-bottom: 6%;
+}
+#left_num{
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 6%;
+}
+#box_h{
+   font-family: 'Garamond'; 
+   font-variant: small-caps;
+}
+#projects{
+        margin: 12px;
+    }
+    #goals{
+        margin: 12px;
+    }
+   #box_h{
+       margin: 15px;
+   }
+   #page_test{
+       font-size: 13px;
+       margin: 13px;
+   }
+   #book_head{
+       margin: 15px;
+       font-size: 15px;
+   }
+@media only screen and (max-width: 450px)/* and (max-width: 750px)*/{/*small mobile phone*/
+
+    .book_color{
+    overflow: auto;
+    font-size: small;/*
+    padding: 5px;*/
+}
+.box_1_1_1{
+    display: flex;
+    flex-direction: column-reverse;
+    /*border: 5px double black;*//*
+    border: 5px solid #22090c;
+    border-right: 5px solid #aaa392;*/
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    height: 275px;
+    overflow: auto;
+}
+.box_1_1_2{
+    display: flex;
+    flex-direction: column-reverse;
+    /*border: 5px double black;*//*
+    border: 5px solid #22090c;
+    border-left: 5px solid #aaa392;*/
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    overflow: auto;
+}
+#right_num{
+    text-align: right;
+}
+#left_num{
+    text-align: left;
+}
+#book_pic{
+      border-radius: 7px;
+  }
+  #projects{
+        margin: 10px;
+    }
+    #goals{
+        margin: 10px;
+    }
+   #box_h{
+       margin: 10px;
+   }
+   #page_test{
+       font-size: 10px;
+       margin: 7px;
+   }
+   #book_head{
+       margin: 7px;
+       font-size: 10px;
+   }/*
+   br{
+       font-size: 2px;
+   }*/
+   .box_2_1_2{
+       font-size: 15px;
+   }
+}
+@media only screen and (min-width: 750px){/*middle size*/
+    iframe{
+        height: 325px;
+        width: 325px;
+    }
+    #box_1{/*
+      display: flex;
+      flex-direction: row;*/
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      gap:0px;
+    }
+  #box_2{
+      display: flex;
+      flex-direction: row-reverse;/*
+      display: grid;
+      grid-template-columns: 1fr 3fr 3fr 1fr;*/
+      gap:0px;
+      justify-content: center;
+  }
+    #box2_1_1_1{
+        background-color: green;
+    }
+    
+    #projects{
+        margin: 12px;
+    }
+    #goals{
+        margin: 12px;
+    }
+   #box_h{
+       margin: 15px;
+   }
+   #page_test{
+       font-size: 15px;
+       margin: 20px;
+   }
+   #book_head{
+       margin: 25px;
+       font-size: 15px;
+   }
+}
+@media only screen and (min-width: 825px){
+    iframe{
+      width: 400px;
+      height: 400px;
+  }
+  #projects{
+        margin: 12px;
+    }
+    #goals{
+        margin: 12px;
+    }
+   #box_h{
+       margin: 15px;
+   }
+   #page_test{
+       font-size: 15px;
+       margin: 20px;
+   }
+   #book_head{
+       margin: 25px;
+       font-size: 20px;
+   }
+}
+
+@media only screen and (min-width: 915px){
+    iframe{
+        width: 450px;
+        height: 450px;
+    }
+    #projects{
+        margin: 12px;
+    }
+    #goals{
+        margin: 12px;
+    }
+   #box_h{
+       margin: 15px;
+   }
+   #page_test{
+       font-size: 20px;
+       margin: 20px;
+   }
+   #book_head{
+       margin: 25px;
+       font-size: 20px;
+   }
+}
+
+@media only screen and (min-width: 975px){/*If desktop, use code below*/
+
+  #box_1{/*
+      display: flex;
+      flex-direction: row;*/
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      gap:0px;
+  }
+  #box_2{
+      display: flex;
+      flex-direction: row-reverse;/*
+      display: grid;
+      grid-template-columns: 1fr 3fr 3fr 1fr;*/
+      gap:5%;
+      justify-content: center;
+      /*font-size: 60px;*/
+  }
+  iframe{
+      width: 500px;
+      height: 500px;
+  }
+   .box2_1_1_1{
+       background-color: blue;
+       margin: 20px;
+   }
+   #page_test{
+       font-size: 20px;
+       margin: 20px;
+   }
+   .box_1_2{
+        font-size: 16px;
+   }
+   #projects{
+       margin: 18px;
+   }
+   #goals{
+      margin: 20px;
+   }
+   #box_h{
+       margin: 15px;
+   }
+   #book_head{
+       margin: 25px;
+       font-size: 20px;
+   }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+
+        <div id="box_1">
+            <div class="item box_1_1">    
+                <div class="item box_1_1_1 book_color" onclick="page_left();" id="left_page">
+                    <div id="left_num">
+                        Left
+                    </div>
+                    <br>
+                    <br>
+                    <div id="book_head" class="book_text">
+                            Image description
+                    </div>
+                    <!--<br>-->
+                    <br>    
+                    <div>
+                        <img id="book_pic" class="img" src="https://www.catmanney.com/website_images/IMG_3068-comp-square.jpg"/>
+                    </div>
+                </div>
+                <div class="item box_1_1_2 book_color" onclick="page_right();" id="right_page">
+                    <div id="right_num">
+                        Right
+                    </div>
+                    <br>
+                    <div id="page_test" class="book_text">
+                        long text...
+                    </div>
+                </div>
+            </div>
+
+            <div class="item box_1_2">
+                <div id="projects">
+                    <p>Here are three examples of fun web development</p>
+                    <p>I created these to practice my skills, and to teach others about code.</p>
+                    <p>It may be fun to start learning by working through these projects.</p>
+                    <p>Click here to look at them: <a href="C:\Users\SURFACE\Documents\my_code\common_code\final_port\fun_home_f\index.html" target="_blank">Projects</a></p>
+                </div>
+            </div>
+        </div>
+          
+        <div id="box_2">
+            <div id="box_2_1">
+                <div id="box_2_1_1">
+                    <div class="item box_2_1_1_1">
+                        <div id="goals">
+                            <p>Summer 2021 goals</p>
+                            <ul>
+                                <li>Complete personal website (this one)</li>
+                                <li>Add captions and notes to coding tutorials</li>
+                                <li>Continue practicing Chinese language</li>
+                                <li>Become more adept at Ukelele</li>
+                                <li>Enjoy nature and the water</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class=" item box_2_1_1_2">
+            ​           <div id="box_2_1_1_2_1">
+                            <div>
+                                <img style='transform: rotate(0deg); border-radius: 100%' src="https://www.catmanney.com/website_images/sky_paint.jpg" id="sky_pic" />
+                            </div>
+                        </div>
+                        <div id="box_2_1_1_2_2">
+                            <p id="box_h">Let's meet again when the sky has changed!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item box_2_1_2" onclick="text_toggle()">
+                    <div id="engl_chin">
+                        這些文字直行的
+                    </div>
+                </div>
+            </div>
+                <div class="item box_2_2">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScH0kwUuWBYYrnbcQ3b_W4LlA0dOtNe95WhqZsOcvOwWYZixg/viewform?embedded=true" width="300" height="300" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                    <p>Form having some trouble? Try this link instead:</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScH0kwUuWBYYrnbcQ3b_W4LlA0dOtNe95WhqZsOcvOwWYZixg/viewform?usp=sf_link" target="_blank">Contact Link</a>
+
+                </div>
+        </div>
+    </div>
+
+    <script>
+        var i = 0;
+        var book_photos = ['https://www.catmanney.com/website_images/rock_sit_comp3.jpg',
+        'https://www.catmanney.com/website_images/rock_sit_comp3.jpg',
+        'https://www.catmanney.com/website_images/tree_stand.jpg',
+        'https://www.catmanney.com/website_images/floor_sit.jpg',
+        'https://www.catmanney.com/website_images/pink_tree.jpg',
+        'https://www.catmanney.com/website_images/maple_stream.jpg',
+        'https://www.catmanney.com/website_images/maple_stream.jpg'];
+        var book_heading = ['<br>'/*<br><br><br><br>*/,
+        '1: To Learn',
+        '2: Stretching Out',
+        '3: Building Up',
+        '4: Fix a Bug',
+        '5: New Normal',
+        "tap page to turn"];
+        var book_pages = ["Title:<br>Turning a New Leaf<br><br>tap pages to turn<br><br><br><br><br>",
+
+        "Learning requires only two things: a learner, and something to be learned. This simplicity indicates flexibility in the ways learning can occur, and there is no need to let ignorance or fear of the unknown stop us from taking advantage of it.",
+
+        "Web development technology grants more options for expression than traditional print/paper. One benefit of this change is that people like me are enabled to live a fulfilling intellectual life without a college degree.",
+
+        "A couple ways it does this is through the incorporation of non-text methods of communication, and the option to participate in new social circles, particularly international ones.",
+
+        "Educational software development can take advantage of these traits by keeping distractions to a minimum, and ensuring that skills learned provide practical use to the learner. When crafted with intention, a game need not be a distraction.",
+
+        "The internet is a powerful tool, so I think it is important to understand the ways it has influenced our lives, and to ensure that any changes going forward are made with the well-being of the users front and center.",
+
+        "<br><br><br>"
+        
+        ];
+        var left_nums = ['<br>','i','2','4','6','8','<br>'];
+        var right_nums = ['<br>','1','3','5','7','9','<br>'];
+        function page_color(){
+            if(i==0){
+                document.getElementById("left_page").style.background = "dimgrey";
+                document.getElementById("right_page").style.background = '#451219';
+                document.getElementById("book_pic").style.opacity = 0.00;
+                document.getElementById("left_page").style.color = '#ffffff';
+                document.getElementById("right_page").style.color = '#ffffff';
+                document.getElementById("left_page").style.borderRight = '10px solid #22090c';
+                document.getElementById("right_page").style.borderLeft = '10px solid #22090c';
+                document.getElementById("left_page").style.border = '10px solid #696969'
+            }else if(i==6){
+                document.getElementById("left_page").style.background = '#451219';
+                document.getElementById("right_page").style.background = "dimgrey";
+                document.getElementById("book_pic").style.opacity = 0.00;
+                document.getElementById("left_page").style.color = '#ffffff';
+                document.getElementById("right_page").style.color = '#ffffff';
+                document.getElementById("left_page").style.borderRight = '10px solid #22090c';
+                document.getElementById("right_page").style.borderLeft = '10px solid #22090c';
+                document.getElementById("right_page").style.border = '10px solid #696969'
+                document.getElementById("left_page").style.border = '10px solid #22090c'
+            }else{
+                document.getElementById("left_page").style.background = "#ddd7cc"
+                document.getElementById("right_page").style.background = "#ddd7cc";
+                document.getElementById("book_pic").style.opacity = 1.0;
+                document.getElementById("left_page").style.color = '#000000';
+                document.getElementById("right_page").style.color = '#000000';
+                document.getElementById("left_page").style.border = '10px solid #22090c'
+                document.getElementById("right_page").style.border = '10px solid #22090c'//
+                document.getElementById("left_page").style.borderRight = '10px solid #aaa392';
+                document.getElementById("right_page").style.borderLeft = '10px solid #aaa392';
+        }
+    }
+        function page_left(){
+            if(i>0){
+            i--;
+            document.getElementById("book_pic").src = book_photos[i]
+            document.getElementById("book_head").innerHTML = book_heading[i];
+            document.getElementById("page_test").innerHTML = book_pages[i];
+                document.getElementById("left_num").innerHTML = left_nums[i];
+                document.getElementById("right_num").innerHTML = right_nums[i];
+            page_color();
+            }
+        }
+        function page_right(){
+            if(i<6){//**
+            i++;
+            document.getElementById("book_pic").src = book_photos[i];
+            document.getElementById("book_head").innerHTML = book_heading[i];
+            document.getElementById("page_test").innerHTML = book_pages[i];
+                document.getElementById("left_num").innerHTML = left_nums[i];
+                document.getElementById("right_num").innerHTML = right_nums[i];
+            page_color();
+            }
+        }
+        document.getElementById("book_pic").src = book_photos[i]
+            document.getElementById("book_head").innerHTML = book_heading[i];
+            document.getElementById("page_test").innerHTML = book_pages[i];
+                document.getElementById("left_num").innerHTML = left_nums[i];
+                document.getElementById("right_num").innerHTML = right_nums[i];
+        page_color();
+        var text_lan = "english";
+        function text_toggle(){
+            if (text_lan=="english"){
+                text_lan="chinese";
+                document.getElementById("engl_chin").innerHTML = "這些文字直行的";
+                //如果你喜歡英語請點擊我
+            }else{
+                text_lan="english";
+                document.getElementById("engl_chin").innerHTML = "Vertical Text";
+            }
+        }
+        var dt = new Date();
+   var hr = dt.getHours();
+   var nh = 'rotate'+'('+15*hr+'deg)';
+   function rotation_clock(){
+    document.getElementById("clock_pic").style.transform = nh;
+   }
+   function rotation_sky(){
+    document.getElementById("sky_pic").style.transform = nh;
+
+   }
+   rotation_sky();
+   rotation_clock();
+    </script>
+</body>
