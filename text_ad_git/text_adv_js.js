@@ -435,7 +435,7 @@ var matchbox = {
                   hallway_2A.doors.can_go.push("south");
                   courtyard.doors.north = hallway_2A;
                   courtyard.doors.can_go.push("north");
-                  game_html.innerHTML +='<p>'+'door has been unlocjed, and leads to the south!';
+                  game_html.innerHTML +='<p>'+'door has been unlocked, and leads to the south!';
                   hallway_2A.description += ' an unlocked door leads to the south.';
                   hall_door.description += ' door is unlocked and leads to the south.';
                 }else{
